@@ -1,21 +1,29 @@
-let idade = 32;
-let isMaiorIdade = true;
-let isCursandoOutraFaculdade = false;
+let idade = prompt("qual a sua idade?");
+let isMaiorIdade = prompt("você terminou o ensino médio? SIM ou NÃO");
+let isCursandoOutraFaculdade = prompt(
+  "você está cursando alguma faculdade? SIM ou NÃO"
+);
 
 if (idade >= 18) {
   console.log("é maior de idade: " + idade);
-} else {
+} else if (idade <= 17) {
   console.log("não é maior de idade");
+} else {
+  console.log("dado inválido");
 }
 
-if (isMaiorIdade) {
+if (isMaiorIdade == "SIM") {
   console.log("terminou o ensino médio");
-} else {
+} else if (isMaiorIdade == "NÃO") {
   console.log("ainda não terminou o ensino médio");
+} else {
+  console.log("dado inválido");
 }
 
-if (isCursandoOutraFaculdade === false) {
+if (isCursandoOutraFaculdade == "NÃO") {
   console.log("não está cursando faculdade");
-} else {
+} else if (isCursandoOutraFaculdade == "SIM") {
   console.log("está cursando faculdade");
+} else {
+  console.log("dado inválido");
 }
