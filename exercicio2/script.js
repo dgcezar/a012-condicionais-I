@@ -27,3 +27,9 @@ if (isCursandoOutraFaculdade == "NÃO") {
 } else {
   console.log("dado inválido");
 }
+
+if (idade >= 18 && isMaiorIdade == "SIM" && isCursandoOutraFaculdade == "NÃO") {
+    console.log(true);
+} else {
+    console.log(false);
+}
