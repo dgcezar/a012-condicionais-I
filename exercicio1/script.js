@@ -1,5 +1,7 @@
-const num = //seu numero aqui
+const num = prompt("digite um número: ");
 
-if(){
-    console.log("sua mensagem aqui");
+if (num % 2 == 0) {
+  alert("o número é par");
+} else {
+  alert("o número é impar");
 }
